@@ -24,13 +24,13 @@ namespace Mockery\Adapter\Phpunit;
 
 trait MockeryTestCaseSetUp
 {
-    protected function setUp(): void
+    protected function setUp()
     {
         parent::setUp();
         $this->mockeryTestSetUp();
     }
 
-    protected function tearDown(): void
+    protected function tearDown()
     {
         $this->mockeryTestTearDown();
         parent::tearDown();
